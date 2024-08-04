@@ -14,6 +14,8 @@ else: # dev, ~/.django.logging.conf
 ```xml
 services:
   service_name:
+    environment:
+      - LOG_FILE=/var/log/XXX.log
     volumes:
       - /root/logging.conf:/code/logging.conf
 ```
